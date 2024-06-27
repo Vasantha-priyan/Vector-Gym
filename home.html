@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>
+		Vector-GYM
+	</title>
+	<link rel="icon" href="gym.jpg"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Comerse</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .navbar{
+    background-color: red !important;
+}
+.nav-link{
+    color: black!important;
+    font-weight: bold;
+}
+.nav-link:hover{
+    color: blue !important;
+    text-decoration: underline;
+    background-color: black;
+    border-radius: 50%;
+    text-align: center;
+}
+
+}
+.fa-shopping-cart,.fa-user-circle-o{
+    /* font-size: 32px; */
+}
+.fa-truck,.fa-clock-o,.fa-thumbs-up{
+    font-size: 50px;
+    margin-right: 10px;
+}
+.card1,.card2,.card3{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    background-color:grey;
+    box-shadow: 2px 4px 5px black;
+    justify-content: center;
+    align-items: center;
+   font-weight: bold;
+   color:black;
+   margin-top: 10px;
+
+ 
+}
+.mainCard{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+}
+@media  screen and (max-width:600px){
+
+    .card1,.card2,.card3 {
+        width:100%;
+    }
+}
+.card{
+    width: auto;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.newProduct{
+    margin-top: 30px;
+    
+    /* background-color: #EF5350; */
+}
+.card-text{
+    font-weight: bold;
+}
+
+.btn-primary{
+    background-color:gray; 
+    width: 100%;
+}
+.heading1{
+    text-align: center;
+   margin-bottom: 15px;
+    color:red ;
+    text-shadow: 2px 4px 5px black;
+}
+.footer{
+    background-color: black;
+    width: auto;
+    height: 100px;
+    text-align: center;
+    color: white;
+
+}
+ h4{
+    padding-top: 20px;
+}
+
+/* About Section */
+
+#about{
+    background-color: black;
+    color: white;
+
+}
+
+/* contact us */
+
+#contact{
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+}
+
+  </style>
+  
+    
+    
+</head>
+
+<body>
+  <div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top ">
+      <a class="navbar-brand" href="#">
+        <img src="https://thumbs.dreamstime.com/b/gym-word-lettering-muscular-men-silhouettes-gym-word-bodybuilding-relative-image-123303583.jpg" width="100px" height="50px" alt="Sorry">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+
+        </ul>
+        <span class="navbar-text">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </span>
+      </div>
+    </nav>
+
+    
+    <div id="carouselExampleCaptions home" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://th.bing.com/th/id/OIP.sG1KxwAHLD2OuA6YqNme4gHaFE?rs=1&pid=ImgDetMain" height="550px" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Success starts with self-discipline</h5>
+            <p>Push yourself because no one else is going to do it for you</p>
+          </div>
+        </div>
+        
+    </div>
+
+    <div class="mainCard">
+      <div class="card1">
+        <div><i class="" aria-hidden="true"></i></div>
+        <div id="shoping"> <a href="summa.html" style="color: black;">Personal Training</a></div>
+
+      </div>
+
+      <div class="card2">
+        <div><i class="fa fa-clock-o" aria-hidden="true"></i></div>
+        <div><a href="summa.html" style="color: black;">24/7 Hours</a></div>
+
+      </div>
+
+      <div class="card3">
+        <div><i class="fa fa-thumbs-up" aria-hidden="true"></i></div>
+        <div><a href="summa.html" style="color: black;">Best Quality</a></div>
+
+      </div>
+    </div>
+
+    <div class="newProduct">
+      <div class="heading1">
+        <h1>Special Services</h1>
+      </div>
+      <div class="container">
+        <div class="row justify-content-sm-center">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="https://th.bing.com/th/id/OIP.Eh3dnAjqa1k1GPHcW1KvggHaE8?rs=1&pid=ImgDetMain" width="840" height="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cardio</h5>
+                <p class="card-text"> </p>
+                <a href="#" class="btn btn-primary">Special Services</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="https://thumbs.dreamstime.com/b/slim-athletic-woman-working-out-gym-doing-knee-bounce-exercise-lunges-yoga-sporty-clothes-pink-leggings-89837098.jpg" width="840" height="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zumba</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Special Services</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="https://www.mensjournal.com/.image/t_share/MTk2MTM2MTI2MTcwNjA1MDYx/_main2_spin.jpg" width="840" height="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Spinning</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Special Services</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="https://th.bing.com/th/id/OIP.pgMCs4RVoPV0cN6WS2t5SQHaIV?rs=1&pid=ImgDetMain" width="840" height="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pilates</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Special Services</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="newProduct">
+      <div class="heading1">
+        <h1>Membership Pack</h1>
+      </div>
+      <div class="container">
+        <div class="row justify-content-sm-center">
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src=" https://graphicsfamily.com/wp-content/uploads/edd/2021/02/Free-Download-Vector-Gym-Logo-PSD-Template-768x576.jpg" width="840" height="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Diamond</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="https://graphicsfamily.com/wp-content/uploads/edd/2021/02/Free-Download-Vector-Gym-Logo-PSD-Template-768x576.jpg" width="840" height="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"> Platinium</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="https://graphicsfamily.com/wp-content/uploads/edd/2021/02/Free-Download-Vector-Gym-Logo-PSD-Template-768x576.jpg" width="840" height="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Gold</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <div class="card">
+              <img src="https://graphicsfamily.com/wp-content/uploads/edd/2021/02/Free-Download-Vector-Gym-Logo-PSD-Template-768x576.jpg"  width="840" height="280" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Silver</h5>
+                <p class="card-text"></p>
+                <a href="#" class="btn btn-primary">Add to cart</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    
+
+
+    <div class="container" id="about">
+      <div class="heading1">
+        <h1>About Us</h1>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+         <p>Welcome to Vector Gym, your ultimate fitness destination. Our mission is to create a supportive environment for all fitness levels. We offer state-of-the-art facilities and expert trainers dedicated to your success. Enjoy diverse classes, from HIIT to yoga, tailored to your needs. Our community-focused approach keeps you motivated and engaged. Cleanliness and safety are our top priorities, with rigorous cleaning protocols in place. Flexible membership options cater to your lifestyle and goals. Join us today and start your journey to a healthier, happier you at Vector Gym.
+         </p>
+        </div>
+        <div class="col-md-6">
+          <img src="https://th.bing.com/th/id/OIP.hBAHmQfZpAlLkjsURM_leAHaEo?rs=1&pid=ImgDetMain" alt="" height="250px" width="500px">
+        </div>
+
+
+        </div>
+
+      </div>
+      </div>
+
+      <!-- Contac us section -->
+
+      <form class="container " id="contact">
+        <div class="heading1">
+          <h1>Contact Us</h1>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Address</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text "  class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+        </div>
+       
+        </div>
+
+        <button type="submit" class="btn btn-primary" class="on"><a href="summa.html">Sign in</a></button>
+      </form>
+    
+
+
+
+        <!-- /* section of footer */ -->
+
+      
+
+
+    </div>
+
+
+
+   
+</body>
+
+</html>

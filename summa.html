@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Vector-GYM
+	</title>
+	<link rel="icon" href="gym.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .list {
+            display: flex;
+            gap: 0.25rem;
+            transform-style: preserve-3d;
+            list-style-type: none;
+
+            &:hover :not(:hover) {
+                margin: 0 -20px;
+                transform: perspective(500px) rotateY(45deg) scale(0.95);
+            }
+
+            &:hover :not(:hover)::after {
+                opacity: 0.4;
+            }
+        }
+
+        .item {
+            position: relative;
+            width: 120px;
+            aspect-ratio: 3/4;
+            border-radius: 0.5rem;
+            background-size: cover;
+            background-position: center;
+            transition: margin 0.5s, transform 0.5s;
+
+            &:nth-of-type(1) {
+                background-image: url(https://png.pngtree.com/background/20230516/original/pngtree-gym-with-many-weights-in-dark-lighting-picture-image_2611113.jpg);
+            }
+
+            &:nth-of-type(2) {
+                background-image: url(https://th.bing.com/th/id/OIP.RoxQHa9JJEfHX-0JUX3LmAHaE8?rs=1&pid=ImgDetMain);
+            }
+
+            &:nth-of-type(3) {
+                background-image: url(gym.jpg);
+            }
+
+            &:nth-of-type(4) {
+                background-image: url(https://th.bing.com/th/id/R.7da4dc7a2f36d7b3104fc1579ff49721?rik=sIG7l4piBcMYtQ&riu=http%3a%2f%2fwallsdesk.com%2fwp-content%2fuploads%2f2016%2f10%2fGym-full-HD.jpg&ehk=rM9zUn2mHsW%2f5tY%2fkkmGqe2z6jqCvdQncAo%2bnNMdREE%3d&risl=&pid=ImgRaw&r=0);
+            }
+
+            &:nth-of-type(5) {
+                background-image: url(https://static.vecteezy.com/system/resources/thumbnails/022/653/988/small_2x/treadmill-in-modern-gym-toned-image-3d-rendering-generative-ai-free-photo.jpg);
+            }
+
+
+
+        }
+
+
+        &:hover~.item {
+            transform: perspective(500px) rotateY(-45deg) scale(0.95);
+        }
+
+        &:hover {
+            transform: perspective(500px) rotateY(0) scale(1.2);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: inherit;
+            aspect-ratio: inherit;
+            border-radius: inherit;
+            background-color: black;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <ul class='list'>
+        <li class='item'></li>
+        <li class='item'></li>
+        <li class='item'></li>
+        <li class='item'></li>
+        <li class='item'></li>
+        
+</body>
+
+</html>
